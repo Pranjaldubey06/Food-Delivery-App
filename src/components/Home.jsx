@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React,{useEffect, useState} from 'react';
 import Navbar from "../components/Navbar";
 // import Home from "./components/Home";
 import Information from "../components/Information";
@@ -9,7 +9,8 @@ import Banner from './Banner';
 
 
 const Home = () => {
-  useEffect(() => {
+  
+useEffect(() => {
     document.title = "Food Ordering App";
   }, []);
   return (
@@ -17,9 +18,7 @@ const Home = () => {
     <div>
   
   <Navbar/>
-
 <Banner/>
-
 <Information/>
 <CategoryMenu/>
 <FoodItem/>

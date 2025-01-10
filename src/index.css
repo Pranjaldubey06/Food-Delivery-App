@@ -8,6 +8,19 @@
 *{
   font-family:'poppins',sans-serif ;
 }
+.light-mode{
+  background-color: white;
+  color: black;
+}
+.icon{
+  cursor:pointer;
+}
+.dark-mode{
+  background-color: black;
+  color:white;
+}
+
+
 @layer base{
   button{
     @apply border border-black w-24 rounded-xl px-5 py-1

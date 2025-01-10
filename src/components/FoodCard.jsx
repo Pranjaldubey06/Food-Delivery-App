@@ -7,18 +7,18 @@ const FoodCard = ({ id, price, name, desc, rating, img, handleToast }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className=" font-bold w-[250px] bg-white p-3 flex flex-col">
+    <div className=" font-bold w-[250px]  bg-gray-400 p-3 flex flex-col rounded-xl">
       <img
         src={img}
         alt=""
         className="w-auto h-[130px] hover:scale-110 cursor-grab transition-all duration-500 ease-in-out"
       />
-      <div className="text-sm flex justify-between">
+      <div className="text-sm flex justify-between dark-mode:text-white">
         <h2 className="mt-2">{name}</h2>
         <span className="text-orange-500 mt-2">₹{price}</span>
       </div>
       <p className="text-sm font-normal mt-2">{desc?.slice(0, 50)}...</p>
-      <div className="flex justify-between mt-4 ">
+      <div className="flex justify-between mt-4  ">
         <span className="flex justify-center items-center">
           <FaStar className="text-yellow-300 mr-1" />
           {rating}

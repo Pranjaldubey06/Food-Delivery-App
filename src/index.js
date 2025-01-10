@@ -4,10 +4,12 @@ import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
 import StoreCart from './redux/StoreCart.js';
+// import Logo from './components/Logo.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={StoreCart}>
+      
     <App />
     </Provider>
    </React.StrictMode>
