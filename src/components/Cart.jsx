@@ -64,7 +64,7 @@ const Cart = () => {
           <hr className="w-[90vw] lg:w-[18vw] my-2" />
           <button
             onClick={() => navigate("/success")}
-            className="bg-orange-500 font-bold px-3 text-white py-2 w-[90vw] lg:w-[18vw] mb-5"
+            className=" bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600  font-bold px-3 text-white py-2 w-[90vw] lg:w-[18vw] mb-5"
           >
             Checkout
           </button>

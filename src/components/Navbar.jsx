@@ -81,7 +81,7 @@ const Navbar = () => {
       {/* Login/Logout Button */}
       <div>
         {!isLoggedIn ? (
-          <button className="w-full bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600 transition">
+          <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 transition">
             <Link to="/Login" className="text-white hover:underline">
               Login
             </Link>
