@@ -46,7 +46,7 @@ const Home = () => {
     
     const timer = setTimeout(() => {
       setShowSplash(false);
-    },5000);
+    },3000);
 
     return () => clearTimeout(timer); 
   }, []);
@@ -58,8 +58,10 @@ const Home = () => {
         justifyContent: "center", 
         alignItems: "center", 
         height: "100vh", 
-        backgroundColor: "orange" 
-      }}>
+        backgroundColor: "bg-orange-500" 
+      }}
+      className='bg-orange-500'
+      >
         <Zoom>      
           <img 
           src=" https://d3aa3s3yhl0emm.cloudfront.net/output/lx/design/180e98f4ead1425e9d75c1500d5b803e_1024x1024.jpg"
